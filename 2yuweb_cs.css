@@ -1,0 +1,440 @@
+.pageLimit{
+	position:  absolute;
+	width: 1800px;
+	height: 2000px;
+	max-width:  100%;
+}
+.pageLimitBlock{
+	display: unblock;
+	z-index: 0;
+	position:  absolute;
+	width: 100%;
+	height: 100%;
+	background-color: white;
+
+}
+
+.titlecentered{
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	top: 600px;
+	font-weight: 40px;
+	font-size: 100px;
+}
+
+.customizedButton{
+	background-color: transparent;
+}
+
+.playbutton_icon{
+	position: absolute;
+	top: 27%;
+	left: 5%;
+	z-index: 6;
+	height: 40px;
+	width: 40px;
+}
+
+.playbutton_icon_image{
+	height: 40px;
+	width: 40px;
+}
+
+.header{
+	z-index: 5;
+	background-color: black;
+	position:  fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+}
+
+.header.tab{
+	background: transparent;
+}
+
+.body.whiteText{
+	color: white;
+	position:  relative;
+	font-family: "Lucdia Console", monospace;
+	font-weight: bold;
+	height: 0px;
+	text-align:  right;
+	top: 25%;
+	font-size: 20px;
+	letter-spacing: 1px;
+	padding:  20px;
+	margin: 20px;
+}
+
+.bodyCheck{
+    position: absolute;
+    top: 25%;
+    /*vertical-align: middle;*/
+    /*transform: translate(0, -71%);*/
+    text-align: right;
+    width: 400px;
+    height: 50px;
+    right: 0px;
+    z-index: 6;
+    margin: 0px;
+    outline: 0px;
+    padding: 0px;
+    font-size: 100%;
+    animation-name: bodyCheckAni;
+    animation-duration: 2.0s;
+}
+
+@keyframes bodyCheckAni{
+	0%{right:  -200px; opacity:  0;}
+	50%{right:  -75px; opacity: 0;}
+	100%{right:  0px; opacity:  1;}
+}
+
+
+
+.bodyCheck_nav{
+    position: absolute;
+   /* top: 50%;
+*/    /*vertical-align: middle;*/
+    /*transform: translate(0, -71%);*/
+    text-align: right;
+    width: 400px;
+    height: 50px;
+    right: 0px;
+    z-index: 6;
+    margin: 0px;
+    outline: 0px;
+    padding: 0px;
+    font-size: 100%;
+}
+
+.bodyCheck_nav_content{
+	display: flex;
+	position: absolute;
+	top: 20%;
+	margin: 0px;
+    outline: 0px;
+    padding: 0px;
+    list-style-type: none;
+}
+
+.bodyCheck_nav_spacing{
+	position: relative;
+	right: ;
+	margin: 0px 10px;
+    outline: 0px;
+    padding: 0px;
+}
+
+.font_class{
+	font-family : 'ヒラギノ角ゴ ProN' , 'Hiragino Kaku Gothic ProN' , '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic' , 'メイリオ' , Meiryo , 'ＭＳ ゴシック' , 'MS Gothic' , HiraKakuProN-W3 , 'TakaoExゴシック' , TakaoExGothic , 'MotoyaLCedar' , 'Droid Sans Japanese' , sans-serif;;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration:none;
+	color: white;
+}
+
+.font_class.black{
+	font-family : 'ヒラギノ角ゴ ProN' , 'Hiragino Kaku Gothic ProN' , '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic' , 'メイリオ' , Meiryo , 'ＭＳ ゴシック' , 'MS Gothic' , HiraKakuProN-W3 , 'TakaoExゴシック' , TakaoExGothic , 'MotoyaLCedar' , 'Droid Sans Japanese' , sans-serif;;
+	font-size: 20px;
+	font-weight: bolder;
+	text-decoration:none;
+	color: black;
+}
+
+.font_class.arttext{
+	font-family : 'ヒラギノ角ゴ ProN' , 'Hiragino Kaku Gothic ProN' , '游ゴシック' , '游ゴシック体' , YuGothic , 'Yu Gothic' , 'メイリオ' , Meiryo , 'ＭＳ ゴシック' , 'MS Gothic' , HiraKakuProN-W3 , 'TakaoExゴシック' , TakaoExGothic , 'MotoyaLCedar' , 'Droid Sans Japanese' , sans-serif;;
+	font-size: 30px;
+	font-weight: bolder;
+	text-decoration:none;
+	color: white;
+	min-width: 3000px;
+}
+
+
+
+
+/*.body.whiteText.contact{
+	right: 90px;
+}
+
+.body.whiteText.about{
+	right: 200px;
+}
+
+.body.whiteText.work{
+	right: 325px;
+}*/
+
+.profileImage{
+    z-index: 1;
+    position: absolute;
+    top: 100px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 600px;
+}
+
+.profileImage_inner{
+	z-index: 2;
+    background-color: black;
+    width: 330px;
+    height: 330px;
+    position: absolute;
+    left: 23%;
+    top: 18%;
+    border: 0px;
+    clip-path: circle(45%);
+    transition: transform .4s;
+	
+}
+
+.profileImage.inner.white{
+	z-index:  2;
+	background-color: white;
+	width: 325px;
+	height: 325px;
+	position:  relative;
+	left: 40%;
+	top: 45px;
+	clip-path: circle(45%);
+	
+}
+
+.profileUser{
+	z-index:  4;
+	position: absolute;
+	width : 300px;
+	height : 300px;
+	top: 15px;
+	left: 16px;
+	clip-path:  circle(45%);
+}
+
+.profileImage_inner:hover{
+    -ms-transform: scale(1.2); 
+  	-webkit-transform: scale(1.2); 
+  	transform: scale(1.2); 
+}
+
+.imagebox{
+	position:  absolute;
+	width: 600px;
+	height: 100%;
+    left: 500px;
+	background-color:  transparent;
+
+}
+
+.textbox_black{
+	position: absolute;
+    top: 0;
+    left: 0px;
+    margin: 0px;
+    padding: 0px;
+    width: 500px;
+    height: 600px;
+    background-color: white;
+}
+
+.textbox_black_inner{
+	position:  absolute;
+	top: 12%;
+	left: 12%;
+	width:  75%;
+	height: 75%;
+	background-color:  black;
+	color:  white;
+	animation-name: textbox_black_inner_appear;
+    animation-duration: 2s;
+}
+
+@keyframes textbox_black_inner_appear{
+	0%{height: 5%; width: 3%; opacity: 1}
+	1%{height: 5%; width: 3%;opacity: 0}
+	5%{height: 5%; width: 3%;opacity: 0}
+	6%{height: 5%; width: 3%;opacity: 1}
+	10%{height: 5%; width: 3%;opacity: 1}
+	11%{height: 5%; width: 3%;opacity: 0}
+	15%{height: 5%; width: 3%;opacity: 0}
+	25%{height: 5%; width: 3%;opacity:  1}
+	60%{height: 5%; width:  75%; opacity: 1}
+	65%{height: 5%; width:  75%; opacity: 1}
+	79%{height: 5%; width:  75%; opacity: 1}
+	80%{opacity: 0}
+	85%{opacity: 0}
+	86%{opacity: 1}
+	90%{opacity: 1}
+	91%{opacity: 0}
+	95%{opacity: 0}
+	99%{opacity: 1}
+	100%{height: 75%; opacity: 1}
+}
+
+.textbox_black_inner_para{
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    margin: 45px 38px;
+    animation-name: text_black_inner_para_animation;
+    animation-duration: 4s;
+}
+
+@keyframes text_black_inner_para_animation{
+	0%{opacity:  0}
+	80%{opacity: 0}
+	100%{opacity:  1}
+}
+
+
+.buttonbox{
+	position: absolute;
+    height: 83px;
+    top: 76%;
+    left: 25%;
+    width: 51%;
+}
+
+.customButton{
+	position: absolute;
+    width: 49%;
+    height: 100%;
+    top: 0%;
+    border-color: black;
+
+}
+
+.customButton.a{
+	left: 51%;
+}
+
+.font_class.black.twitter_word_position{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    border: 4px solid black;
+    padding: 24px 39px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.font_class.black.twitter_word_position:hover{
+	background-color: black;
+	color: white;
+}
+
+.font_class.black.pixiv_word_position{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+    border: 4px solid black;
+    padding: 24px 50px;
+    border-radius: 30px;
+    transition: 1s;
+}
+
+.font_class.black.pixiv_word_position:hover{
+	background-color: black;
+	color: white;
+}
+
+.font_class.for_headers{
+	font-weight: 10px;
+	word-spacing:  4px;
+}
+
+.imageDisplayBox{
+	position: relative;
+	top: 20px;
+	left: 40px;
+	height: 600px;
+	width: 100%;
+	background-color: black;
+}
+
+.scroll_image_box{
+	top: 25%;
+	position: absolute;
+	height: 300px;
+	min-width: 100%;
+	background-color: transparent;
+	animation-name: scroll_image_box_animation;
+	animation-duration: 5s;
+}
+
+@keyframes scroll_image_box_animation{
+	0%{opacity : 0};
+	80%{opacity:  0};
+	100%{opacity:  1};
+}
+
+.scroll_image_box_inner{
+	position: absolute;
+	height: 300px;
+	margin-left: 10%;
+	margin-right: 10%;
+	background-color: white;
+	display:  block;
+	width: 1500px;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.scroll_image_box_image_container{
+	position: absolute;
+}
+
+.resized_image{
+	position: absolute;
+	width: 25%;
+}
+
+.horizontal_infinite_scroll{
+	animation: horizontalScroll 20s linear infinite;
+}
+
+.horizontal_infinite_scroll.2{
+	animation: horizontalScroll 20s linear infinite;
+	left: 1400px;
+}
+
+@keyframes horizontalScroll{
+	0% {  transform:  translateX(0);}
+	100% {  transform:  translateX(-100%);}
+}
+
+.parallaxBack{
+	min-height: 700px;
+	background-image: url(56bce408cb1f6918242827a2c5db24d0.jpg);
+	background-attachment: fixed;
+  	background-position: center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.makethirdbox{
+	background-color: black;
+	height: 1000px;
+	width: 2000px;
+	position: relative;
+	top: 20%;
+	animation-duration: 3s;
+	animation-name: fadein;
+	animation-play-state: paused;
+}
+
+@keyframes fadein{
+	0%{opacity:  0};
+	100%{opacity:  1};
+}
+
+
+
